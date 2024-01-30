@@ -30,7 +30,7 @@ class MyAppState extends ChangeNotifier {
   void getNext() {
     current = WordPair.random();
     notifyListeners();
-     
+  }
   var favorites = <WordPair>[];
 
   void toggleFavorite() {
@@ -42,7 +42,7 @@ class MyAppState extends ChangeNotifier {
     notifyListeners();
   }
 }
-}
+
 
 class MyHomePage extends StatelessWidget {
   @override
